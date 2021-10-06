@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Marks CALCULATOR</h1>
+    <h2>Hey i am jack and i will calculate your performance based on your marks</h2>
+    <div class="marks">
+      <table class="center">
+      <tr>
+        <th>Course name</th>
+        <th>Enter your marks</th>
+      </tr>
+        <tr>
+         <td>Course-1</td>
+        <td>  <input type="text"   id="courseone"  required> </td>
+        </tr>
+        <tr>
+         <td>Course-2</td>
+        <td>  <input type="text" id="coursetwo" required> </td>
+        </tr>
+        <tr>
+         <td>Course-3</td>
+        <td>  <input type="text" id="coursethree" required> </td>
+        </tr>
+        <tr>
+         <td> Course-4 </td>
+        <td>  <input type="text" id="coursefour" required> </td>
+        </tr>
+        <tr>
+         <td>  Course-5 </td>
+        <td>  <input type="text" id="coursefive" required> </td>
+        </tr>
+        </table>
+          </div>
+
+        <div class="btncon">
+        <button type="submit" name="button" class="total"  onclick="calculatetotal()" >Total </button>
+        <button type="submit" name="button" class="average" onclick="calculateaverage()" >Average</button>
+        <button type="submit" name="button"  class="percent"onclick="calculatepercent()" >Percent</button>
+          </div>
+        <div class="criteria">
+        <h5>Important Points</h5>
+        <ul>
+          <li>A student is considered as pass if and only if</li>
+          <ol>
+            Student get total marks  greater than 250.
+          </ol>
+          <ol>
+            Student  get marks greater than 50 in all the subject
+          </ol>
+          <li>
+            Student who are fail not get any rank
+      </li>
+      <li>
+            Students having same total marks get ranks based on age
+        </li>
+        <li>Marks obtained are out of 100</li>
+
+        </ul>
+
+        </div>
+
+         <p id="result"></p>
+         <table class="center">
+           <tr>
+             <th><h3> Check Overall performance</h3></th>
+             <th> <button type="button" name="button"  class="over" onclick="overall()"> Check </button></th>
+           </tr>
+         </table>
+
+
+          <p id="performance"></p>
+    <script src="index.js">
+
+    </script>
+  </body>
+</html>
